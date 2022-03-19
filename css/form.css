@@ -1,0 +1,137 @@
+
+
+/* Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-control {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.form-control input::placeholder,
+textarea::placeholder {
+    color: hsla(207, 33%, 32%, 0.5);
+}
+
+.form-control.error input,
+.form-control.error textarea {
+    border-color: var(--error-red);
+    color: var(--error-red);
+}
+
+.form-control.error input::placeholder,
+.form-control.error textarea::placeholder {
+    color: var(--error-red);
+}
+
+.contact-form-error {
+    color: var(--error-red);
+    text-align: initial;
+    position: absolute;
+    left: 2.5rem;
+}
+
+.form-control input,
+.form-control textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid hsla(207, 33%, 32%, 0.5);
+    cursor: pointer;
+    display: block;
+    font-family: var(--ff-sans-serif);
+    font-weight: var(--fw-400);
+    padding: .8rem 0 .8rem 1rem;
+    margin: auto;
+    width:  90%;
+}
+
+.form-control input:focus {
+    border: 2px solid var(--blue);
+}
+
+
+@media (min-width: 1080px) {
+   .contact-info {
+       display: flex;
+       align-items: center;
+   } 
+
+   .contact-partners {
+       flex-direction: column;
+   }
+
+   .contact-form,
+   .contact-partners {
+       width: 100%;
+   }
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.newsletter > * {
+    width: 100%;
+}
+
+.newsletter p {
+    text-align: initial;
+}
+
+.check-box {
+    display: grid;
+    place-content: center;
+    background-color: var(--dark-pink);
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.checkmark {
+    display: none;
+}
+
+.partners.contact-partners {
+    background: none;
+    padding-bottom: 2.5rem;
+}
+
+.contact-partners .partner-grid img {
+    filter: none;
+}
+
+.contact-partners h2 {
+    color: var(--san-juan-blue);
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+    .contact-partners h3 {
+        margin: 0 auto 2rem;
+        width: 70%;
+    }
+}
+
+@media (min-width: 1080px) {
+    .contact-info {
+        gap: 3rem;
+    }
+
+    .contact-partners .partner-grid {
+        justify-content: flex-start;
+    }
+
+    .contact-partners h2 {
+        margin-left: 0;
+        width: 80%;
+        text-align: left;
+    }
+}
+

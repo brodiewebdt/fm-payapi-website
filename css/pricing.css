@@ -1,0 +1,104 @@
+/************ Pricing Table *************/
+.pricing-table {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pricing-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 2.3rem 2rem;
+    padding: 2.3rem 0.5rem;
+    width: 350px;
+}
+
+span.price {
+    color: var(--san-juan-blue);
+    font-size: var(--fs-56);
+    font-family: var(--ff-serif);
+    letter-spacing: -0.43px;
+    line-height: var(--lh-72);
+    margin: 1.5rem 0 2rem;
+}
+
+.pricing-card-list .benefits::before {
+    content: url("../images/shared/desktop/icon-check.svg");
+    margin-right: 1rem;
+}
+
+.pricing-card-list li:not(.benefits):before {
+    content: " ";
+    margin-right: 2rem;
+}
+
+.featured {
+    background: var(--primary-gradient);
+    color: var(--light-grayish-blue);
+}
+
+.pricing-card-list {
+    border-top: 1px solid hsl(0 0% 59% / 0.25);
+    border-bottom: 1px solid hsl(0 0% 59% / 0.25);
+    color: var(--grayish-blue);
+    list-style: none;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    padding-inline: 6rem;
+    text-align: center;
+    width: 100%;
+}
+
+.pricing-card-list .benefits {
+    color: var(--san-juan-blue);
+}
+
+.pricing-card-list li {
+    color: hsla(207, 33%, 32%, 0.5);
+    padding: 0.8rem 0;
+    text-align: initial;
+}
+
+.pricing-card:last-child {
+    margin-bottom: 0;
+}
+
+.pricing-card-list li:last-child {
+    margin-bottom: 2rem;
+}
+
+/************ Media Queries *************/
+@media (min-width: 767px) {
+    .pricing-table {
+        flex-direction: row;
+    }
+
+    .pricing-card {
+        margin-bottom: 0;
+    }
+
+    .pricing-card-list {
+        padding-inline: 2rem;
+    }
+
+}
+
+@media (min-width: 1080px) {
+    .pricing-table {
+        gap: 2rem;
+    }
+
+    .pricing-card-list {
+        padding-inline: 0;
+    }
+
+    .pricing-card {
+        align-items: flex-start;
+        padding-inline: 0;
+        text-align: initial;        
+    }
+}

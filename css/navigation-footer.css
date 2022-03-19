@@ -1,0 +1,234 @@
+/**************** Navigation Styles  **************/
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+ul {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 2.5rem;
+}
+
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+.logo {
+    margin-right: 3rem;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.primary-navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    background: hsl(0 0% 0% / 0.5);
+}
+
+.primary-navigation a {
+    text-decoration: none;
+}
+
+/* Use span in place of aria-hidden if no aria attribute */
+.primary-navigation a > span[aria-hidden="true"] {
+    font-weight: 700;
+    margin-inline-end: 0.5em;
+}
+
+@media (max-width: 38em) {
+    .primary-navigation {
+        --gap: 2em;
+        position: fixed;
+        z-index: 1000;
+        /* Shorthand for top bottom left right */
+        inset: 0 0 0 25%;
+        flex-direction: column;
+        background-color: var(--mirage-blue);
+        background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
+        background-position: top -575px center;
+        background-repeat: no-repeat;
+        padding: min(30vh, 7rem) 2rem;
+        text-align: center;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .primary-navigation li:first-child {
+        border-top: 1px solid hsl(0 0% 59% / 0.15);
+        padding-top: 2.5rem;
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    .mobile-nav-toggle {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top: 3rem;
+        z-index: 9999;
+        background-color: transparent;
+        background-image: url(../images/shared/mobile/menu.svg);
+        background-repeat: no-repeat;
+        border: 0;
+        aspect-ratio: 1 / 1;
+        width: 2rem;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url(../images/shared/mobile/close.svg);
+    }
+}
+
+@media (min-width: 35em) and (max-width: 55em) {
+    .primary-navigation a > [aria-hidden="true"] {
+        display: none;
+    }
+}
+
+@media (min-width: 38em) {
+    .primary-navigation {
+        --gap: 2.5rem;
+        background-color: transparent;
+        align-items: center;
+        padding-inline: 0;
+    }
+
+    .primary-navigation a {
+        color: var(--light-san-juan-blue);
+        font-weight: var(--fw-700);
+    }
+
+    .primary-navigation a:hover,
+    .primary-navigation a:focus {
+        color: var(--san-juan-blue);
+    }
+
+    .primary-navigation li:last-child {
+        margin-left: auto;
+    }
+
+    .primary-navigation .mobile-btn {
+        color: var(--link-water-white);
+        padding-inline: 2rem;
+    }
+
+    .main-nav {
+        flex-grow: 1;
+    }
+}
+
+/**************** Footer Styles  **************/
+.footer {
+    background-color: var(--mirage-blue);
+    background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
+    background-position: bottom -575px center;
+    background-repeat: no-repeat;
+    padding-block: 3.5rem;
+}
+
+@media (min-width: 767px) {
+    .footer {
+        background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
+        background-position: bottom -575px right -400px;
+        background-repeat: no-repeat;
+        padding-block: 2rem;
+    }
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-logo,
+.footer-nav {
+    margin-bottom: 2.5rem;
+}
+
+.footer-nav {
+    flex: 1;
+}
+
+.footer-nav ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    font-size: 0.9375rem;
+    letter-spacing: 2px;
+}
+
+.social-nav ul {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+}
+
+.footer-link {
+    color: hsl(210, 6%, 74%);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--white);
+}
+
+.social-link:hover,
+.social-link:focus {
+    color: var(--charm-pink);
+}
+
+/**************** Media Queries  **************/
+@media (min-width: 767px) {
+    .footer .container {
+        align-items: center;
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: start;
+    }
+
+    .footer-logo,
+    .footer-nav {
+        margin-bottom: 0;
+    }
+
+    .footer-nav {
+        margin-right: auto;
+    }
+
+    .footer-nav ul {
+        flex-direction: row;
+    }
+}

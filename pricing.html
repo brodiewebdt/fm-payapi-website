@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+        <title>Frontend Mentor | PayAPI Website Challenge - Pricing</title>
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="css/andy-bell-reset.css" />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <!-- Custom Css -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/navigation-footer.css" />
+        <link rel="stylesheet" href="css/pricing.css" />
+    </head>
+
+    <body class="pricing-page">
+        <main>
+            
+                <div class="pricing-hero">
+                    <div class="container">
+                    <header>
+                        <div class="logo-holder">
+                            <a href="index.html">
+                                <img
+                                    class="logo"
+                                    src="images/shared/desktop/logo.svg"
+                                    alt="payapi"
+                                />
+                            </a>
+                        </div>
+                        <!-- /.logo-holder -->
+
+                        <button
+                            class="mobile-nav-toggle"
+                            aria-controls="primary-navigation"
+                            aria-expanded="false"
+                        >
+                            <span class="sr-only">Menu</span>
+                        </button>
+
+                        <nav class="main-nav">
+                            <ul
+                                id="primary-navigation"
+                                class="primary-navigation flex"
+                                data-visible="false"
+                            >
+                                <li class="active">
+                                    <a href="pricing.html">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                                <li>
+                                    <a class="btn mobile-btn" href="#"
+                                        >Schedule a Demo</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <h1>Pricing</h1>
+                    </div><!-- /.container -->
+                </div>
+                <!-- /.pricing-hero -->
+                
+                <div class="container">
+                <div class="pricing-table">
+                    <div class="pricing-card">
+                        <h2 class="pricing-package-title">Free Plan</h2>
+                        <p>
+                            Build and test using our core set of products with
+                            up to 100 API requests
+                        </p>
+                        <span class="price" id="free">&dollar;0.00</span>
+                        <ul class="pricing-card-list">
+                            <li class="benefits">Transactions</li>
+                            <li class="benefits">Auth</li>
+                            <li class="benefits">Identity</li>
+                            <li>Investments</li>
+                            <li>Assets</li>
+                            <li>Liabilities</li>
+                            <li>Income</li>
+                        </ul>
+                        <a class="btn btn-pricing" href="#">Request Access</a>
+                    </div>
+                    <!-- /.pricing-card -->
+
+                    <div class="pricing-card">
+                        <h2 class="pricing-package-title">Basic Plan</h2>
+                        <p>
+                            Launch your project with unlimited requests and no
+                            contractual  minimums
+                        </p>
+                        <span class="price" id="basic">&dollar;249.00</span>
+                        <ul class="pricing-card-list">
+                            <li class="benefits">Transactions</li>
+                            <li class="benefits">Auth</li>
+                            <li class="benefits">Identity</li>
+                            <li class="benefits">Investments</li>
+                            <li class="benefits">Assets</li>
+                            <li>Liabilities</li>
+                            <li>Income</li>
+                        </ul>
+                        <a class="btn btn-pricing" href="#">Request Access</a>
+                    </div>
+                    <!-- /.pricing-card -->
+
+                    <div class="pricing-card">
+                        <h2 class="pricing-package-title">Premium Plan</h2>
+                        <p>
+                            Get tailored solutions, volume pricing, and
+                            dedicated support for your team
+                        </p>
+                        <span class="price" id="premium">&dollar;499.99</span>
+                        <ul class="pricing-card-list">
+                            <li class="benefits">Transactions</li>
+                            <li class="benefits">Auth</li>
+                            <li class="benefits">Identity</li>
+                            <li class="benefits">Investments</li>
+                            <li class="benefits">Assets</li>
+                            <li class="benefits">Liabilities</li>
+                            <li class="benefits">Income</li>
+                        </ul>
+                        <a class="btn btn-pricing" href="#">Request Access</a>
+                    </div>
+                    <!-- /.pricing-card -->
+                </div>
+                <!-- /.pricing-table -->
+
+                <section class="cta">
+                    <div class="cta-txt">
+                        <h2 class="cta-title">Ready to start?</h2>
+                        <form class="cta-form">
+                            <input
+                                type="email"
+                                name="cta-email"
+                                id="cta-email"
+                                placeholder="Enter email address"
+                                class="email-input cta-email"
+                            />
+                            <small>Please provide a valid email</small>
+                            <button class="btn btn-submit" type="submit">
+                                Schedule a Demo
+                            </button>
+                        </form>
+                        <!-- /.cta-form -->
+                    </div>
+                    <!-- /.cta txt -->
+                </section>
+                <!-- /.cta -->
+              </div><!-- /.container -->  
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img
+                            src="images/shared/desktop/footer-logo.svg"
+                            alt="payapi"
+                        />
+                    </a>
+                </div>
+                <!-- /.footer-logo -->
+                <nav class="footer-nav" aria-label="footer-nav">
+                    <ul>
+                        <li><a class="footer-link" href="pricing.html">Pricing</a></li>
+                        <li><a class="footer-link" href="about.html">About</a></li>
+                        <li><a class="footer-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav class="social-nav" aria-label="social-nav">
+                    <ul>
+                        <li>
+                            <a class="social-link" href="#" aria-label="Facebook"
+                                ><i class="fab fa-facebook-square"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a class="social-link" href="#" aria-label="Twitter"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a class="social-link" href="#" aria-label="LinkedIn"
+                                ><i class="fab fa-linkedin"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /.container -->
+        </footer>
+        <!-- /.footer -->
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

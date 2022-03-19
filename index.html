@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="images/favicon-32x32.png"
+        />
+        <title>Frontend Mentor | PayAPI Website Challenge - Home</title>
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="css/andy-bell-reset.css" />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <!-- Custom Css -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/navigation-footer.css" />
+    </head>
+
+    <body class="home-page">
+        <main>
+            <div class="hero">
+                <div class="container">
+                    <header>
+                        <div class="logo-holder">
+                            <a href="index.html">
+                                <img
+                                    class="logo"
+                                    src="images/shared/desktop/logo.svg"
+                                    alt="payapi"
+                                />
+                            </a>
+                        </div>
+                        <!-- /.logo-holder -->
+
+                        <button
+                            class="mobile-nav-toggle"
+                            aria-controls="primary-navigation"
+                            aria-expanded="false"
+                        >
+                            <span class="sr-only">Menu</span>
+                        </button>
+
+                        <nav class="main-nav">
+                            <ul
+                                id="primary-navigation"
+                                class="primary-navigation flex"
+                                data-visible="false"
+                            >
+                                <li class="active">
+                                    <a href="pricing.html">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                                <li>
+                                    <a class="btn mobile-btn" href="#"
+                                        >Schedule a Demo</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <div class="hero-info">
+                        <div class="hero-img">
+                            <img
+                                src="images/home/desktop/illustration-phone-mockup.svg"
+                                alt="phone mockup"
+                            />
+                        </div>
+                        <!-- /.hero-img -->
+                        <div class="hero-txt">
+                            <h1 class="home-page-title">
+                                Start building with our APIs for absolutely
+                                free.
+                            </h1>
+                            <form class="hero-form">
+                                <input
+                                    type="email"
+                                    name="hero-email"
+                                    id="hero-email"
+                                    placeholder="Enter email address"
+                                    class="email-input hero-email"
+                                />
+                                <small>Please provide a valid email</small>
+                                <button class="btn btn-submit" type="submit">
+                                    Schedule a Demo
+                                </button>
+                            </form>
+                            <!-- /.hero-form -->
+                            <div class="form-notice">
+                                <p>
+                                    Have any questions?
+                                    <a href="#">Contact Us</a>
+                                </p>
+                            </div>
+                            <!-- /.form-notice -->
+                        </div>
+                        <!-- /.hero txt -->
+                    </div>
+                    <!-- /.hero-info -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.hero -->
+
+            <section class="partners">
+                <div class="container">
+                    <div class="partner-grid">
+                        <img
+                            src="images/shared/desktop/tesla.svg"
+                            alt="tesla"
+                        />
+                        <img
+                            src="images/shared/desktop/microsoft.svg"
+                            alt="microsoft"
+                        />
+                        <img
+                            src="images/shared/desktop/hewlett-packard.svg"
+                            alt="hewlett-packard"
+                        />
+                        <img
+                            src="images/shared/desktop/oracle.svg"
+                            alt="oracle"
+                        />
+                        <img
+                            src="images/shared/desktop/google.svg"
+                            alt="google"
+                        />
+                        <img
+                            src="images/shared/desktop/nvidia.svg"
+                            alt="nvidia"
+                        />
+                    </div>
+                    <!-- /.partner-grid -->
+                    <div class="partner-txt">
+                        <h2 class="partner-title">Who we work with</h2>
+                        <p>
+                            Today, millions of people around the world have
+                            successfully connected their accounts to apps they
+                            love using our API. We provide developers with the
+                            tools they need to create easy and accessible
+                            experiences for their users.
+                        </p>
+                        <a class="btn btn-secondary" href="#">About Us</a>
+                    </div>
+                    <!-- /.partner-txt -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.partners -->
+
+            <div class="container">
+                <section class="implement">
+                    <div class="implement-img">
+                        <img
+                            src="images/home/desktop/illustration-easy-to-implement.svg"
+                            alt=""
+                        />
+                    </div>
+                    <!-- /.implement-img -->
+                    <div class="implement-txt">
+                        <h2>Easy to implement</h2>
+                        <p>
+                            Our API comes with just a few lines of code. You'll
+                            be up and running in no time. We built our
+                            documentation page to integrate payments
+                            functionality with ease.
+                        </p>
+                    </div>
+                    <!-- /.implement-txt -->
+                </section>
+                <!-- /.implement -->
+
+                <section class="simple-ui">
+                    <div class="simple-ui-img">
+                        <img
+                            src="images/home/desktop/illustration-simple-ui.svg"
+                            alt=""
+                        />
+                    </div>
+                    <!-- /.simple-ui-img -->
+                    <div class="simple-ui-txt">
+                        <h2>Simple UI & UX</h2>
+                        <p>
+                            Our pre-built form is easy to integrate in your app
+                            or website's checkout flow and designed to optimize
+                            conversion.
+                        </p>
+                    </div>
+                    <!-- /.simple-ui-txt -->
+                </section>
+                <!-- /.simple-ui -->
+
+                <section class="features">
+                    <div class="features-cards">
+                        <div class="card card-1">
+                            <img
+                                class="icon"
+                                src="images/home/desktop/icon-personal-finances.svg"
+                                alt=""
+                            />
+                            <h3 class="feature-card-title">
+                                Personal Finances
+                            </h3>
+                            <p>
+                                Consolidate financial data from multiple sources
+                                and categorize transactions up to 2 years of
+                                history. Analyze reports to reconcile activities
+                                in your account.
+                            </p>
+                        </div>
+                        <!-- /.card card-1 -->
+                        <div class="card card-2">
+                            <img
+                                class="icon"
+                                src="images/home/desktop/icon-banking-and-coverage.svg"
+                                alt=""
+                            />
+                            <h3 class="feature-card-title">
+                                Banking & Coverage
+                            </h3>
+                            <p>
+                                With our platform, you can speed up account
+                                onboarding and support ongoing payments for
+                                checking, savings, credit card, and brokerage
+                                accounts
+                            </p>
+                        </div>
+                        <!-- /.card card-2 -->
+                        <div class="card card-3">
+                            <img
+                                class="icon"
+                                src="images/home/desktop/icon-consumer-payments.svg"
+                                alt=""
+                            />
+                            <h3 class="feature-card-title">
+                                Consumer Payments
+                            </h3>
+                            <p>
+                                It's easier to set up secure bank payments with
+                                us through a flow designed with the user
+                                experience in mind. Customers could instantly
+                                authenticate their account.
+                            </p>
+                        </div>
+                        <!-- /.card card-3 -->
+                    </div>
+                    <!-- /.features-cards -->
+                </section>
+                <!-- /.features -->
+
+                <section class="cta">
+                    <div class="cta-txt">
+                        <h2 class="cta-title">Ready to start?</h2>
+                        <form class="cta-form">
+                            <input
+                                type="email"
+                                name="cta-email"
+                                id="cta-email"
+                                placeholder="Enter email address"
+                                class="email-input cta-email"
+                            />
+                            <small>Please provide a valid email</small>
+                            <button class="btn btn-submit" type="submit">
+                                Schedule a Demo
+                            </button>
+                        </form>
+                        <!-- /.cta-form -->
+                    </div>
+                    <!-- /.cta txt -->
+                </section>
+                <!-- /.cta -->
+            </div>
+            <!-- /.container -->
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img
+                            src="images/shared/desktop/footer-logo.svg"
+                            alt="payapi"
+                        />
+                    </a>
+                </div>
+                <!-- /.footer-logo -->
+                <nav class="footer-nav" aria-label="footer-nav">
+                    <ul>
+                        <li>
+                            <a class="footer-link" href="pricing.html"
+                                >Pricing</a
+                            >
+                        </li>
+                        <li>
+                            <a class="footer-link" href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="contact.html"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="social-nav" aria-label="social-nav">
+                    <ul>
+                        <li>
+                            <a
+                                class="social-link"
+                                href="#"
+                                aria-label="Facebook"
+                                ><i class="fab fa-facebook-square"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a class="social-link" href="#" aria-label="Twitter"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                class="social-link"
+                                href="#"
+                                aria-label="LinkedIn"
+                                ><i class="fab fa-linkedin"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /.container -->
+        </footer>
+        <!-- /.footer -->
+
+        <script src="js/script.js"></script>
+        <script src="js/hero-form.js"></script>
+    </body>
+</html>
