@@ -55,6 +55,7 @@
 }
 
 body {
+    background-color: hsl(209, 46%, 95%);
     color: var(--san-juan-blue);
     font-family: var(--ff-sans-serif);
     font-size: 0.875rem;
